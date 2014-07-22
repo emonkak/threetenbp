@@ -78,13 +78,6 @@ final class SimpleDateTimeTextProvider extends DateTimeTextProvider {
     };
 
     //-----------------------------------------------------------------------
-    /** {@inheritDoc} */
-    @Override
-    public Locale[] getAvailableLocales() {
-        return DateFormatSymbols.getAvailableLocales();
-    }
-
-    //-----------------------------------------------------------------------
     @Override
     public String getText(TemporalField field, long value, TextStyle style, Locale locale) {
         Object store = findStore(field, locale);

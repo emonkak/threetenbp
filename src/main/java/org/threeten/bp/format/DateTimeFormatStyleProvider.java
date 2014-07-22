@@ -32,7 +32,6 @@
 package org.threeten.bp.format;
 
 import java.util.Locale;
-import java.util.spi.LocaleServiceProvider;
 
 import org.threeten.bp.chrono.Chronology;
 
@@ -45,7 +44,7 @@ import org.threeten.bp.chrono.Chronology;
  * Implementations must be thread-safe.
  * Implementations should cache the returned formatters.
  */
- abstract class DateTimeFormatStyleProvider extends LocaleServiceProvider {
+ abstract class DateTimeFormatStyleProvider {
 
      /**
       * Gets the provider.

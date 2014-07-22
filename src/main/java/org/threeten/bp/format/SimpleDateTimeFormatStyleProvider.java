@@ -55,11 +55,6 @@ final class SimpleDateTimeFormatStyleProvider extends DateTimeFormatStyleProvide
                         new ConcurrentHashMap<String, Object>(16, 0.75f, 2);
 
     @Override
-    public Locale[] getAvailableLocales() {
-        return DateFormat.getAvailableLocales();
-    }
-
-    @Override
     public DateTimeFormatter getFormatter(
             FormatStyle dateStyle, FormatStyle timeStyle, Chronology chrono, Locale locale) {
         if (dateStyle == null && timeStyle == null) {
